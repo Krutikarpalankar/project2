@@ -2,8 +2,6 @@
 // import Listing  from "../../model/listing";
 const map = new maplibregl.Map({
     container: 'map',
-    // style:"https://demotiles.maplibre.org/globe.json?key=vNOeNWtaiWoqk5Z778Iq",
-    // style: 'https://api.maptiler.com/maps/streets/style.json?key=${mapToken}',
         style: `https://api.maptiler.com/maps/streets/style.json?key=${mapToken}`,
     
     center:coordinates,   
