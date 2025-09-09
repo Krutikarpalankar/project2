@@ -40,11 +40,11 @@
          <a class="nav-link" href="/listings/new">Airbnb Your home</a>
        
 
-          <%if(typeof currUser !== "undefined" && currUser){%>
+          <%if(currUser){%>
         <a class="nav-link" href="/logout"><b>Log out</b></a>
         <a class="nav-link">Welcome, <%= currUser.username %></a>
         <%}%>
-        <% else{ %>
+        <% if(!currUser){ %>
         <a class="nav-link" href="/signup"><b>Sign up</b></a>
         <a class="nav-link" href="/login"><b>Log in</b></a>
         
