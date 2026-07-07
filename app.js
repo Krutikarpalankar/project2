@@ -6,7 +6,7 @@ require('dotenv').config()
 const express=require("express");
 const app=express();
 const mongoose=require("mongoose");
-// const MONGO_URL="mongodb://127.0.0.1:27017/wanderlust";
+ const MONGO_URL="mongodb://127.0.0.1:27017/wanderlust";
 const  dbUrl=process.env.ATLASDB_URL;
 const path=require('path');
 const methodOverride=require("method-override");
